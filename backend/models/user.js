@@ -5,10 +5,6 @@ const { Schema } = mongoose;
 
 const { URL_REGEX } = require('../utils/constants');
 
-<<<<<<< HEAD
-=======
-// byaka
->>>>>>> 833141239074abf89643af3ab780df43b9160b12
 const userSchema = new Schema(
   {
     email: {
@@ -20,24 +16,11 @@ const userSchema = new Schema(
         message: 'Требуется ввести электронный адрес',
       },
     },
-<<<<<<< HEAD
-=======
-
->>>>>>> 833141239074abf89643af3ab780df43b9160b12
     password: {
       type: String,
       required: true,
       select: false,
-<<<<<<< HEAD
     },
-=======
-      validate: {
-        validator: ({ length }) => length >= 6,
-        message: 'Пароль должен состоять минимум из 6 символов',
-      },
-    },
-
->>>>>>> 833141239074abf89643af3ab780df43b9160b12
     name: {
       type: String,
       default: 'Жак-Ив Кусто',
