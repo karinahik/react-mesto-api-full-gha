@@ -1,6 +1,5 @@
 .header {
   height: 74px;
-<<<<<<< HEAD
   /* margin: 45px 200px 0 200px;*/
   margin: 0 auto;
   margin-top: 45px;
@@ -8,12 +7,6 @@
   border-bottom: 1px rgba(84, 84, 84, 0.7) solid;
   padding-bottom: 31px;
   max-width: 100%;
-=======
-  margin: 45px 200px 0 200px;
-  width: calc(100% - 400px);
-  border-bottom: 1px rgba(84, 84, 84, 0.7) solid;
-  padding-bottom: 31px;
->>>>>>> 833141239074abf89643af3ab780df43b9160b12
 }
 
 @media screen and (max-width: 1050px) {
