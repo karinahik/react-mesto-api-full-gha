@@ -6,12 +6,8 @@
   "scripts": {
     "lint": "npx eslint .",
     "start": "node app.js",
-<<<<<<< HEAD
     "dev": "nodemon app.js",
     "depcheck": "depcheck"
-=======
-    "dev": "nodemon app.js"
->>>>>>> 833141239074abf89643af3ab780df43b9160b12
   },
   "keywords": [],
   "author": "Karina Sergeevna",
@@ -21,10 +17,6 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "celebrate": "^15.0.1",
-<<<<<<< HEAD
-=======
-    "cors": "^2.8.5",
->>>>>>> 833141239074abf89643af3ab780df43b9160b12
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-rate-limit": "^6.7.0",
@@ -32,7 +24,6 @@
     "helmet": "^6.1.5",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.1.0",
-<<<<<<< HEAD
     "winston": "^3.8.2"
   },
   "devDependencies": {
@@ -40,16 +31,6 @@
     "eslint": "^8.39.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
-=======
-    "validator": "^13.9.0",
-    "winston": "^3.8.2"
-  },
-  "devDependencies": {
-    "eslint": "^8.39.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-require": "^0.0.1",
->>>>>>> 833141239074abf89643af3ab780df43b9160b12
     "nodemon": "^2.0.22"
   }
 }
