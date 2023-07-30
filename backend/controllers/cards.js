@@ -8,6 +8,10 @@ const InaccurateDataError = require('../errors/InaccurateDataError');
 function getInitialCards(_, res, next) {
   Card
     .find({})
+<<<<<<< HEAD
+=======
+    .populate(['owner', 'likes'])
+>>>>>>> 833141239074abf89643af3ab780df43b9160b12
     .then((cards) => res.send({ data: cards }))
     .catch(next);
 }
@@ -35,7 +39,13 @@ function deleteCard(req, res, next) {
   const { userId } = req.user;
 
   Card
+<<<<<<< HEAD
     .findById({ _id: cardId })
+=======
+    .findById({
+      _id: cardId,
+    })
+>>>>>>> 833141239074abf89643af3ab780df43b9160b12
     .then((card) => {
       if (!card) {
         throw new NotFoundError('Данные по указанному id не найдены');
@@ -56,6 +66,7 @@ function deleteCard(req, res, next) {
 
       res.send({ data: deletedCard });
     })
+<<<<<<< HEAD
     .catch((err) => {
       // Если это ошибка CastError, значит был передан невалидный id
       if (err.name === 'CastError') {
@@ -66,6 +77,9 @@ function deleteCard(req, res, next) {
       // Если это не ошибка CastError, то просто передать ошибку дальше
       return next(err);
     });
+=======
+    .catch(next);
+>>>>>>> 833141239074abf89643af3ab780df43b9160b12
 }
 
 // Лайк на карточки:

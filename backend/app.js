@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 // подключаем dotenv, чтобы секретный
 // ключ из файла .env работал
 require('dotenv').config();
+=======
+// подключаем dotenv config(), чтобы секретный
+// ключ из файла .env работал
+require('dotenv').config();
+
+>>>>>>> 833141239074abf89643af3ab780df43b9160b12
 const express = require('express');
 const mongoose = require('mongoose');
 const helmet = require('helmet');
@@ -59,12 +66,20 @@ app.use('/', routeSignin);
 
 app.use(auth);
 
+<<<<<<< HEAD
+=======
+app.use(errorLogger);
+
+>>>>>>> 833141239074abf89643af3ab780df43b9160b12
 app.use('/users', routeUsers);
 app.use('/cards', routeCards);
 
 app.use((req, res, next) => next(new NotFoundError('Страницы по запрошенному URL не существует')));
+<<<<<<< HEAD
 
 app.use(errorLogger);
+=======
+>>>>>>> 833141239074abf89643af3ab780df43b9160b12
 app.use(errors());
 app.use(errorHandler);
 
