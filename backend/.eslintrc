@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-{
-  "env": {
-      "browser": true,
-      "es2021": true
-  },
-  "extends": "airbnb-base",
-  "overrides": [
-  ],
-  "parserOptions": {
-      "ecmaVersion": "latest"
-  },
-  "rules": {
-    "no-underscore-dangle": ["error",{"allow": ["_id"]}],
-    "no-console": "off"
-  }
-}
-
-=======
 {
   "env": {
       "node": true,
@@ -34,4 +15,3 @@
   }
 }
 
->>>>>>> 833141239074abf89643af3ab780df43b9160b12
