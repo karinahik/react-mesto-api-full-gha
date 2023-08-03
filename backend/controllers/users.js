@@ -2,7 +2,7 @@ require('dotenv').config();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
-const { NODE_ENV, SECRET_SIGNING_KEY } = require('../utils/constants');
+const { NODE_KEY } = require('../utils/constants');
 const UnauthorizedError = require('../errors/UnauthorizedError');
 const NotFoundError = require('../errors/NotFoundError');
 const ConflictError = require('../errors/ConflictError');
@@ -63,7 +63,7 @@ function loginUser(req, res, next) {
       if (userId) {
         const token = jwt.sign(
           { userId },
-          NODE_ENV === 'production' ? SECRET_SIGNING_KEY : 'dev-secret',
+          NODE_KEY,
           { expiresIn: '7d' },
         );
 
